@@ -2,7 +2,7 @@
      dark-blue: #4e6172    blue: #83929f    light-blue: #a3adb8
 
    Basic Creative Color Scheme (accent):
-     orange: #ffa135
+     dark-red: #b21f35
 */
 
 * { margin: 0; padding: 0; }
@@ -44,15 +44,13 @@ a {
 #crosscol-wrapper {
     height: 1.8em;
     margin-top: -2.6em; 
-    background: #855723;
-    border-top: 2px solid #ffa135;
-    border-bottom: 2px solid #ffa135;
+    background: #83929f;
 
-    box-shadow: 0 1px 5px 2px rgba(0,0,0,.5), 0 1px 1px #613318 inset, 0 -1px 1px #613318 inset;
-    -moz-box-shadow: 0 1px 5px 2px rgba(0,0,0,.5), 0 1px 1px #613318 inset, 0 -1px 1px #613318 inset;
-    -webkit-box-shadow: 0 1px 5px 2px rgba(0,0,0,.5), 0 1px 1px #613318 inset, 0 -1px 1px #613318 inset;
-    -o-box-shadow: 0 1px 5px 2px rgba(0,0,0,.5), 0 1px 1px #613318 inset, 0 -1px 1px #613318 inset;
-    -khtml-box-shadow: 0 1px 5px 2px rgba(0,0,0,.5), 0 1px 1px #613318 inset, 0 -1px 1px #613318 inset;
+    box-shadow: 0 0 0 2px #b21f35, 0 1px #a3adb8 inset, 0 -1px #a3adb8 inset;
+    -moz-box-shadow: 0 0 0 2px #b21f35, 0 1px #a3adb8 inset, 0 -1px #a3adb8 inset;
+    -webkit-box-shadow: 0 0 0 2px #b21f35, 0 1px #a3adb8 inset, 0 -1px #a3adb8 inset;
+    -o-box-shadow: 0 0 0 2px #b21f35, 0 1px #a3adb8 inset, 0 -1px #a3adb8 inset;
+    -khtml-box-shadow: 0 0 0 2px #b21f35, 0 1px #a3adb8 inset, 0 -1px #a3adb8 inset;
 }
 #footer-wrapper {
     min-height: 3em;
@@ -81,7 +79,7 @@ a {
     bottom: 0;
     left: 75%;
     right: 0;
-    background: #83929f;
+    background: #a3adb8;
 }
 
 #header-wrapper .header {
@@ -93,7 +91,7 @@ a {
 #header-wrapper .header a {
     font-size: xx-large;
     font-weight: bold;
-    color: #855723;
+    color: #b21f35;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgba(0,0,0,.33);
 }
@@ -116,9 +114,9 @@ a {
 
     font-family: Arial,sans-serif;
     font-weight: bold;
-    color: #ffa135;
+    color: #b21f35;
     text-decoration: none;
-    text-shadow: 1px 1px 1px #613318;
+    text-shadow: 1px 1px #a3adb8;
 }
 
 #home, #post, #comments {
