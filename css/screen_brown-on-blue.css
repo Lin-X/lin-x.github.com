@@ -1,0 +1,169 @@
+/* Earthtone Creative Color Scheme:
+     dark-blue: #4e6172    blue: #83929f    light-blue: #a3adb8
+     dark-brown: #613318   brown: #855723   light-brown: #b99c6b
+
+   It turns out that Graytone Creative Color Scheme use the same color
+   (light-brown: #b99c6b), so I use its palette:
+     dark-gray: #949494    gray: #b2b2b2    light-gray: #d6d6d6
+
+ */
+
+* { margin: 0; padding: 0; }
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    text-align: left;
+}
+a { 
+    outline: none; 
+    color: #0055CC;
+}
+
+#outer-wrapper,
+#header-wrapper,
+#crosscol-wrapper,
+#footer-wrapper,
+#footer-wrapper-1 {
+    position: relative;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+#outer-wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+#header-wrapper {
+    height: 4.5em;
+    background: #4e6172;
+}
+#crosscol-wrapper {
+    border-top: 1px solid #613318;
+    border-bottom: 1px solid #b99c6b;
+
+    background-color: #855723;  /* for non CSS3 browsers */
+    background-image: linear-gradient(top,#b99c6b,#613318);
+    /* Mozilla Firefox 3.6+ */
+    background-image: -moz-linear-gradient(top,#b99c6b,#613318);
+    /* Webkit aka Google Chrome */
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#b99c6b),to(#613318));
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top,#b99c6b,#613318);
+    /* Konqueror */
+    background: -khtml-gradient(linear,left top,left bottom,from(#b99c6b),to(#613318));
+    /* Internet Explorer 6,7 and 8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b99c6b',endColorstr='#613318');
+    /* Internet Explorer 8 only */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b99c6b',endColorstr='#613318')";
+
+    box-shadow: 0 1px 1px rgba(0,0,0,.5), 0 1px 3px #613318 inset, 0 -1px 3px #b99c6b inset;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.5), 0 1px 3px #613318 inset, 0 -1px 3px #b99c6b inset;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.5), 0 1px 3px #613318 inset, 0 -1px 3px #b99c6b inset;
+    -o-box-shadow: 0 1px 1px rgba(0,0,0,.5), 0 1px 3px #613318 inset, 0 -1px 3px #b99c6b inset;
+    -khtml-box-shadow: 0 1px 1px rgba(0,0,0,.5), 0 1px 3px #613318 inset, 0 -1px 3px #b99c6b inset;
+}
+#footer-wrapper {
+    min-height: 3em;
+    margin-top: -3em;
+    background: #4e6172;
+}
+#footer-wrapper-1 {
+    height: 3em;
+}
+
+#main, #right-col {
+    position: relative;
+    float: left;
+}
+#main {
+    left: 0;
+    width: 75%;
+}
+#right-col {
+    left: 1%;
+    width: 23%;
+}
+#right-col-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 75%;
+    right: 0;
+    background: #a3adb8;
+}
+
+#header-wrapper .header {
+    height: 3em;
+    margin: 15px 0 15px 2em;
+    overflow: hidden;
+}
+#header-wrapper .header a {
+    font: bold 38px Verdana,Arial,sans-serif;
+    color: #a3adb8;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+#crosscol-wrapper .PageList {
+    height: 1.7em;
+    margin: 2px 0 2px 2em;
+    overflow: hidden;
+    cursor: pointer;
+}
+#crosscol-wrapper .PageList li {
+    display: inline-block;
+    margin: 0 .5em;
+    margin-top: .1em;
+}
+#crosscol-wrapper .PageList li a {
+    float: left;
+    padding: .1em .2em;
+
+    font: 18px/22px Arial,sans-serif;
+    color: #613318;
+    text-decoration: none;
+    text-shadow: 1px 1px #b99c6b;
+}
+
+#main, code {
+    font: 14px/20px Verdana,Arial,sans-serif;
+}
+#main h2 {
+    font: bold 32px Arial,sans-serif;
+}
+#home, #post, #comments {
+    padding: 1.5em;
+    padding-left: 3em;
+}
+#home > p, #post > p {
+     margin: 1em 0;
+}
+#home ul, #post ul {
+    margin-left: 1em;
+    list-style-position: outside;
+}
+#home ul li, #post ul li {
+    margin: .5em 0;
+}
+#post img {
+    max-width: 90%;
+}
+img.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.highlight {
+    margin: 1em;
+    padding: 0.2em;
+}
+.highlight, code {
+    background-color: #eef;
+    border: 1px solid #ddd;
+}
+.highlight code {
+    border: none;
+}

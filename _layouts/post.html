@@ -14,9 +14,9 @@ layout: default
 
 <div id="comments">
   <h2>Отправить комментарий</h2>
-  <div id="header">
-    Want to leave a comment? Visit <a href="https://github.com/izuzak/izuzak.github.com/issues/{{page.commentIssueId}}"> this post's issue page on GitHub</a> (you'll need a GitHub account. What? Like you already don't have one?!).
-</div>
+  <p>
+    Want to leave a comment? Visit <a href="https://github.com/Lin-X/lin-x.github.com/issues/{{page.commentIssueId}}"> this post's issue page on GitHub</a> (you'll need a GitHub account. What? Like you already don't have one?!).
+  </p>
 </div>
 
 <script type="text/javascript">
@@ -27,7 +27,7 @@ function loadComments(data) {
   for (var i=0; i<data.data.length; i++) {
     var cuser = data.data[i].user.login;
     var cuserlink = "https://www.github.com/" + data.data[i].user.login;
-    var clink = "https://github.com/izuzak/izuzak.github.com/issues/{{page.commentIssueId}}#issuecomment-" + data.data[i].url.substring(data.data[i].url.lastIndexOf("/")+1);
+    var clink = "https://github.com/Lin-X/lin-x.github.com/issues/{{page.commentIssueId}}#issuecomment-" + data.data[i].url.substring(data.data[i].url.lastIndexOf("/")+1);
     var cbody = converter.makeHtml(data.data[i].body);
     var cavatarlink = data.data[i].user.avatar_url;
     var cdate = Date.parse(data.data[i].created_at).toString("yyyy-MM-dd HH:mm:ss");
@@ -36,7 +36,7 @@ function loadComments(data) {
   }
 }
 
-$.ajax("https://api.github.com/repos/izuzak/izuzak.github.com/issues/{{page.commentIssueId}}/comments", {
+$.ajax("https://api.github.com/repos/https://github.com/Lin-X/lin-x.github.com/issues/{{page.commentIssueId}}/comments", {
   dataType : "jsonp",
   jsonpCallback : "loadComments"
 });
