@@ -36,7 +36,7 @@ function loadComments(data) {
   }
 }
 
-$.ajax("https://api.github.com/repos/https://github.com/Lin-X/lin-x.github.com/issues/{{page.commentIssueId}}/comments", {
+$.ajax("https://api.github.com/repos/Lin-X/lin-x.github.com/issues/{{page.commentIssueId}}/comments", {
   dataType : "jsonp",
   jsonpCallback : "loadComments"
 });
